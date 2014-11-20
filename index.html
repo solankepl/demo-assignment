@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<meta name="keywords" content="design, css, cascading, style, sheets, xhtml, graphic design, w3c, web standards, visual, display">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<title>css garden: Saba design prototype</title>	
+	<style type="text/css" title="currentStyle" media="screen">
+	html, body, div, span, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, ul, li{
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+	}
+
+	@font-face {
+		font-family: Arial, Helvetica, sans-serif;
+		/*src: url(sansation_light.woff);*/
+	}
+	
+	body{
+		font:Arial, Helvetica, sans-serif;
+		font-size:16px;		
+	}
+	
+	h1{
+		margin:10px 0px;	
+	}
+	
+	p,  h2, h3{
+		margin:10px;
+	}
+	li{
+		list-style: none;
+	}
+	
+	a{
+		text-decoration:none;
+	}
+	#css-garden{
+		width:96%;
+		margin:auto;
+		/*min-width:800px;*/
+	}
+	
+	#pageHeader h1{
+		color:#FFF;	
+		background:#795129;
+		padding:10px;	
+	}
+	
+	#navigation {
+		width:100%;
+		height:60px;
+		color:#FFF;	
+		background:#795129;		
+	}
+	
+	#navigation .select{
+		float:left;
+		padding: 0px 10px;
+		margin:20px 0px;
+	}
+	
+	#navigation ul{
+		
+	}
+	
+	#navigation ul li{
+		float: right;		
+		padding: 20px;	
+		border-left:1px solid #FFF;	
+		border-right:1px solid #FFF;	
+		cursor:pointer;
+	}
+	#navigation ul li a{
+		text-transform: uppercase;
+		color:#FFFFFF;
+	}
+	
+	#navigation ul li:hover{
+		background:#960;	
+	}
+		
+	#quicklinks{
+			
+	}
+	#quicklinks li {	
+		height:25px;
+		margin-left:50px;;
+		list-style: circle;
+	}
+	#quicklinks li a{
+		color:#0000FF;
+		font-size:14px;	
+	}
+	
+	#quicklinks li a:hover{
+		font-size:16px;						
+	}
+	
+	#footer{
+		width:96%;
+		color:#FFF;	
+		background:#795129;
+		height:50px;
+		position:fixed;
+		bottom:0px;
+	
+	}
+	
+	#footer a{
+		line-height: 50px;
+		width: 24%;
+		float: left;		
+		text-align: center;
+		text-decoration:underline;
+	}
+	
+	@media only screen  and (max-width:800px) {
+		#navigation{
+			height:auto;		
+		}
+		#navigation .select{
+			float:none;
+			padding: 20px 10px;
+			margin: 0px;	
+		}
+		#navigation ul li{
+			float:none;
+			border:1px solid #FFF;
+		}
+				
+		#footer a{
+			width: 22%;
+		}
+		
+	}
+	
+	
+	</style>
+
+
+</head>
+<body id="css-garden">
+<div id="screen">
+
+	<div id="header">
+		<div id="pageHeader">
+			<h1><span>CSS Garden</span></h1>
+			<h2><span>The Possibilities of CSS Design</span></h2>
+		</div>
+
+		<div id="quickSummary">
+			<p class="p1"><span>A demonstration of what can be accomplished visually through CSS-based design.</span></p>
+		</div>
+
+
+	</div>
+	<div id="navigation">
+		<h3 class="select"><span>Main Navigation:</span></h3>
+		<ul>
+			<li><a href="#" title="AccessKey: a" accesskey="a">My Profile</a></li>
+			<li><a href="#" title="AccessKey: b" accesskey="b">My Team</a></li>
+			<li><a href="#" title="AccessKey: c" accesskey="c">My Knowledge Network</a></li>
+			<li><a href="#" title="AccessKey: d" accesskey="d">Proxy</a></li>
+			<li><a href="#" title="AccessKey: e" accesskey="e">Compensation</a></li>
+		</ul>
+	</div>
+    <div id="content">
+		<div id="preamble" class="generaltext">
+			<h3><span>The Road to Enlightenment</span></h3>
+			<p class="p1"><span>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, and broken CSS support.</span></p>
+			<p class="p2"><span>Today,
+            we must clear the mind of past practices. Web enlightenment has been
+            achieved thanks to the tireless efforts of folk like the W3C, WaSP and the major browser creators.</span></p>
+			<p class="p3"><span>The
+            CSS Garden invites you to relax and meditate on the important
+            lessons of the masters. Begin to see with clarity. Learn to use the
+            (yet to be) time-honored techniques in new and invigorating fashion.
+            Become one with the web.</span></p>
+		</div>
+  		<div class="generaltext">
+  			<h3><span>So What is This About?</span></h3>
+  			<p class="p1"><span>There is clearly a need for CSS
+              to be taken seriously by graphic artists. This exercise aims to
+              provide a designer with a document to display their talents and skills, inspire, and impress.</span></p>
+  			<p class="p2"><span>CSS
+              allows complete and total control over the style of a hypertext
+              document. The only way this can be illustrated in a way that gets
+              people excited is by demonstrating what it can truly be, once the reins
+              are placed in the hands of those able to create beauty from structure.</span></p>
+  		</div>
+
+  		<div class="generaltext">
+  			<h3><span>Benefits</span></h3>
+  			<p class="p1"><span>Why bother? To demonstrate the power of CSS-based
+              design. This is sorely needed, even today. More and more major sites
+              are taking the leap. In order to create the type of dynamic and beautiful designs that are possible with these techniques.</span></p>
+  		</div>
+
+  		<div class="generaltext">
+  			<h3><span>Requirements</span></h3>
+  			<p class="p1"><span>We would like to see as much CSS1 as possible. CSS2 should be limited to widely-supported elements only. The CSS Garden is about functional, practical CSS and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement is that your CSS validates.</span></p>
+  			<p class="p2">
+                  <span>Full browser
+                  compliance is still sometimes a pipe dream, and we do not expect you to
+                  come up with pixel-perfect code across every platform. But do test in
+                  as many as you can. If your design doesn&#8217;t work in at least IE6+/Win, Safari,
+                  and Firefox (run by over 90% of the population), chances are we won&#8217;t
+                  accept it.</span>
+              </p>
+  			<p class="p4"><span>This is a learning exercise as well as a demonstration.</span></p>
+  		</div>
+
+    </div>
+     <div id="sidebar">
+    	<div id="quicklinks">
+    		<h3 class="resources"><span>Quick Links:</span></h3>
+    		<ul>
+    			<li><a href="#" title="View the source CSS file for the currently-viewed design, AccessKey: v" accesskey="v"><span class="accesskey">V</span>iew This Design&#8217;s CSS</a></li>
+                <li><a href="#" title="Links to great sites with information on using CSS. AccessKey: r" accesskey="r">CSS <span class="accesskey">R</span>esources</a></li>
+    			<li><a href="#" title="A list of Frequently Asked Questions about the Zen Garden. AccessKey: q" accesskey="q">FA<span class="accesskey">Q</span></a></li>
+    			<li><a href="#" title="Send in your own CSS file. AccessKey: s" accesskey="s"><span class="accesskey">S</span>ubmit a Design</a></li>
+    			<li><a href="#" title="View translated versions of this page. AccessKey: t" accesskey="t"><span class="accesskey">T</span>ranslations</a></li>
+    		</ul>
+    	</div>
+    </div>
+    <div id="footer">
+      	<a href="http://www.saba.com" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp;
+    	<a href="http://www.saba.com" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp;
+        <a href="http://www.saba.com" title="Read about the accessibility of this site">508</a> &nbsp;
+        <a href="http://www.saba.com" title="Read about the accessibility of this site">aaa</a>
+    </div>
+</div>
+</body>
+</html>
