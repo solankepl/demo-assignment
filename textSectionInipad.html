@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+    <style type="text/css">
+        body{
+            margin:0px;
+            overflow:hidden;
+        }
+		
+        #container{
+            background-color: #888888;  
+			
+        }
+		
+		#dblClick {
+			background-color: #888888; 
+			width:570px;
+			height:383px;
+			margin:100px auto;  
+			float:left;
+		}
+    </style>
+   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+	
+	</script>
+    <script type="text/javascript">
+	var selectionEndTimeout;
+	
+	$(document).ready(function () {
+		document.addEventListener("selectionchange", dblClickFun, true);
+		$(window).bind('selectionEnd', callFun);
+	});
+
+    function dblClickFun(){		
+		if (selectionEndTimeout) {
+        	clearTimeout(selectionEndTimeout);
+		}		
+		selectionEndTimeout = setTimeout(function () {
+			$(window).trigger('selectionEnd');
+		}, 500);
+	}	
+	
+	function callFun(){
+		selectionEndTimeout = null;
+		var selectedText = window.getSelection().toString();		
+		if(selectedText != ''){		   
+			alert("call === "+selectedText); 
+		}
+	}
+	  
+	  // for desk top text section event
+	  /*$(function(){
+    $(document.body).bind('mouseup', function(e){
+        var selection;
+        
+        if (window.getSelection) {
+          selection = window.getSelection();
+        } else if (document.selection) {
+          selection = document.selection.createRange();
+        }        
+        selection.toString() !== '' && alert('"' + selection.toString() + '" was selected at ' + e.pageX + '/' + e.pageY);
+    });
+});*/
+	       
+    </script>
+</head>
+ 
+<body>
+    <div id="container">
+    	<span id="dblClick"> </span>
+    </div>
+   <p> is a country in southern Asia that ranks as the second largest country in the world
+                in population. Only China has more people. India is also one of the most densely
+                populated countries in the world and one of the largest in area. Its capital is New
+                Delhi. Mumbai, formerly called Bombay, is its largest city.</p>
+</div>
+</body>
+ 
+</html>
