@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Navigation Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+		    $('#pull').on('click', function(e) {
+				e.preventDefault();
+				$('nav ul').slideToggle();
+			});
+		    $(window).resize(menushowHide);
+		});
+		
+		
+         function menushowHide(){
+          var winWidth = $(document).width();
+                console.log(winWidth);          
+             if(winWidth <=650) {
+                 if($('nav ul').css("display") !== "block")
+                 	$('nav ul').css("display","none");
+             }else{
+                 $('nav ul').css("display","block");
+             }
+         }
+         
+	</script>
+</head>
+<body>
+	<nav class="clearfix">
+	    	<a href="#" id="pull"><span>Menu</span></a>
+		<ul class="clearfix">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">How-to</a></li>
+			<li><a href="#">Icons</a></li>
+			<li><a href="#">Design</a></li>
+			<li><a href="#">Web 2.0</a></li>
+			<li><a href="#">Tools</a></li>	
+		</ul>		
+	
+	</nav>
+</body>
+</html>
